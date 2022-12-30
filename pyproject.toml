@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "advent-of-code"
+version = "0.1.0"
+description = ""
+authors = ["Sebastian Dietze <kegeldiddi@outlook.de>"]
+readme = "README.md"
+packages = [{include = "advent_of_code"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.group.dev.dependencies]
+black = "*"
+flake8 = "*"
+flake8-black = "*"
+genbadge = {extras = ["all"], version = "*"}
+pytest = "*"
+pytest-cov = "*"
+pre-commit = "^2.21.0"
